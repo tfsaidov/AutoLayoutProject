@@ -7,13 +7,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.setupNaigationBar()
+        self.setupView()
     }
-
-
+    
+    private func setupNaigationBar() {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.title = "Профиль"
+    }
+    
+    private func setupView() {
+        self.view.backgroundColor = .systemRed
+    }
 }
-
