@@ -21,6 +21,6 @@ final class ViewController: UIViewController {
     }
     
     private func setupView() {
-        self.view.backgroundColor = .systemRed
+        self.view.backgroundColor = .white
     }
 }
