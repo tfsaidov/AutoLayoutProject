@@ -20,11 +20,11 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupNaigationBar()
+        self.setupNavigationBar()
         self.setupView()
     }
     
-    private func setupNaigationBar() {
+    private func setupNavigationBar() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationItem.title = "Профиль"
     }

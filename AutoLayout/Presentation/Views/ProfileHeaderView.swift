@@ -114,7 +114,7 @@ final class ProfileHeaderView: UIView {
         if self.textField.isHidden {
             self.addSubview(self.textField)
             
-//            self.buttonTopConstraint?.isActive = false // Если констрейнт будет жестким, необходимо деактивировать его, иначе будет конфликт констрейнтов, и Auto Layout не сможет однозначно определить фреймы textField'а.
+            self.buttonTopConstraint?.isActive = false // Необходимо деактивировать констрейнт, иначе будет конфликт констрейнтов, и Auto Layout не сможет однозначно определить фреймы textField'а.
             
             let topConstraint = self.textField.topAnchor.constraint(equalTo: self.infoStackView.bottomAnchor, constant: 10)
             let leadingConstraint = self.textField.leadingAnchor.constraint(equalTo: self.statusLabel.leadingAnchor)
